@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
     completedCount = document.querySelectorAll('.day.completed').length;
 
     if (completedCount === totalDays) {
-      showToast('🎉 You did it! 성공했어 축하해!');
+      showToast('🎉 You did it!');
     } else if (completedCount > totalDays / 2) {
-      showToast('👍 Great job! 잘했어!');
+      showToast('👍 Great job!');
     } else {
-      showToast('😊 Nice try! 수고했어!');
+      showToast('😊 Nice try!');
     }
   }
 
@@ -65,9 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ✔ 페이지 로드시 성공률 반영 메시지
   updateCompletedCount();
-});
 
-const resetButton = document.getElementById('resetButton');
+  const resetButton = document.getElementById('resetButton');
 
 resetButton.addEventListener('click', () => {
   // 1. localStorage 초기화
@@ -81,3 +80,7 @@ resetButton.addEventListener('click', () => {
   // 3. 메시지 출력
   showToast('🔄 초기화되었습니다!');
 });
+
+});
+
+
