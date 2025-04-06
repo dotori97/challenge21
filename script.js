@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   
       dayBox.addEventListener('click', toggleComplete);
-      dayBox.addEventListener('touchstart', toggleComplete);  
+      // dayBox.addEventListener('touchstart', toggleComplete);  
       grid.appendChild(dayBox);
     }
   });
