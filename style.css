@@ -1,0 +1,61 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fdfdfd;
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  h1 {
+    margin-bottom: 2rem;
+  }
+  
+  .challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .day {
+    padding: 1rem;
+    border: 2px solid #999;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    user-select: none;
+  }
+  
+  .day.completed {
+    background-color: #04d5ec;
+    border-color: #178995;
+    color: #ffffff;
+  }
+  
+  /* Toast 메시지 */
+  .toast {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color:  rgba(3, 205, 255, 0.2);
+    color: rgb(62, 62, 62);
+    padding: 4rem 8rem;
+    border-radius: 10px;
+    font-size: 4rem;
+    z-index: 999;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .toast.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  
