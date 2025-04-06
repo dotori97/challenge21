@@ -58,4 +58,9 @@ body {
     opacity: 1;
   }
   
+  #resetButton{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    margin-top: 20px;
+  }
   
